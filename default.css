@@ -1,6 +1,6 @@
 body{
     background: hsl(0, 0%, 81%);
-    /* height: 100vh; */
+    height: 100%;
     Font-size: 13px;
     color: hsl(0, 0%, 100%);
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -10,6 +10,23 @@ img{
     border-radius: 30px;
 }
 
+#pattern{
+    display: block;
+    position: absolute;
+    margin-left: 65%;
+    z-index: 2;
+    overflow: hidden;
+    
+
+}
+
+#placement{
+    position: absolute;
+    z-index: 3;
+    
+
+}
+
 h3{
     margin: 0;
 }
@@ -17,11 +34,12 @@ h3{
 .flex{
     display: flex;
     align-items: center;
+    
 }
 
 .flex-user{
     text-align: center;
-    padding-left: 30px;
+    padding-left: 20px;
     
 }
 
@@ -31,13 +49,22 @@ span{
 
 p{
     opacity: 0.7;
+    z-index: 1;
 }
 
 .container{
-    width: 1000px;
+    width: 80%;
+    height: 50%;
     margin: auto;
-    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-    transform: translateY(-50%)  
+    margin-top: 15vh; 
+    
+}
+
+.border{
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;   
+
 }
 
 #grid{
